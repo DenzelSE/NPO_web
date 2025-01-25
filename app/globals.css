@@ -9,25 +9,24 @@
   --card-foreground: 222.2 84% 4.9%;
   --popover: 0 0% 100%;
   --popover-foreground: 222.2 84% 4.9%;
-  --primary: 221.2 83.2% 53.3%;
+  --primary: 340 82% 52%;
   --primary-foreground: 210 40% 98%;
-  --secondary: 210 40% 96.1%;
+  --secondary: 10 100% 90%;
   --secondary-foreground: 222.2 47.4% 11.2%;
   --muted: 210 40% 96.1%;
   --muted-foreground: 215.4 16.3% 46.9%;
-  --accent: 210 40% 96.1%;
+  --accent: 340 82% 96%;
   --accent-foreground: 222.2 47.4% 11.2%;
   --destructive: 0 84.2% 60.2%;
   --destructive-foreground: 210 40% 98%;
   --border: 214.3 31.8% 91.4%;
   --input: 214.3 31.8% 91.4%;
-  --ring: 221.2 83.2% 53.3%;
+  --ring: 340 82% 52%;
   --radius: 1rem;
 }
 
 .curved-section {
   position: relative;
-  background: linear-gradient(160deg, #f8fafc 0%, #e2e8f0 100%);
   overflow: hidden;
 }
 
@@ -41,5 +40,9 @@
   background: white;
   border-top-left-radius: 50% 100%;
   border-top-right-radius: 50% 100%;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-rose-500;
 }
 
