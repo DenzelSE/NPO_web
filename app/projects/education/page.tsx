@@ -32,7 +32,7 @@ export default function Education() {
         <li>Donate school supplies and educational materials</li>
       </ul>
       <h2 className="text-2xl font-bold mb-4">Gallery</h2>
-      <ImageGallery images={educationImages} />
+      {/* <ImageGallery images={educationImages} /> */}
     </div>
   )
 }

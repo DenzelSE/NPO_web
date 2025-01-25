@@ -32,7 +32,7 @@ export default function Community() {
         creating new economic opportunities.
       </p>
       <h2 className="text-2xl font-bold mb-4">Gallery</h2>
-      <ImageGallery images={communityImages} />
+      {/* <ImageGallery images={communityImages} /> */}
     </div>
   )
 }

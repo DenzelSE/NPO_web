@@ -32,7 +32,7 @@ export default function Foundation() {
         solutions tailored to each community's needs.
       </p>
       <h2 className="text-2xl font-bold mb-4">Gallery</h2>
-      <ImageGallery images={foundationImages} />
+      {/* <ImageGallery images={foundationImages} /> */}
     </div>
   )
 }
