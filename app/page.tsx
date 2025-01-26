@@ -5,7 +5,7 @@ import ProjectCarousel from "./components/ProjectCarousel"
 
 export default function Home() {
   return (
-    <div className="h-screen w-screen mx-auto">
+    <div className="min-h-screen w-auto mx-auto">
       {/* Hero Section */}
       <section className="relative min-h-screen pt-32 pb-24 flex items-center">
         <BackgroundImage />
