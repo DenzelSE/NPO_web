@@ -9,7 +9,7 @@ export default function Projects() {
         <div className="bg-gray-100 p-6 rounded-lg">
           <div className="relative h-48 mb-4">
             <Image
-              src="/placeholder.svg?height=200&width=300"
+              src="/images/carousel/WhatsApp Image 2024-12-05 at 00.11.13_5d2c4a45.jpg"
               alt="Foundation Project"
               layout="fill"
               objectFit="cover"
@@ -28,7 +28,7 @@ export default function Projects() {
         <div className="bg-gray-100 p-6 rounded-lg">
           <div className="relative h-48 mb-4">
             <Image
-              src="/placeholder.svg?height=200&width=300"
+              src="/images/carousel/WhatsApp Image 2024-12-13 at 07.38.41_e90d02ae.jpg"
               alt="Community-Based Project"
               layout="fill"
               objectFit="cover"
@@ -47,7 +47,7 @@ export default function Projects() {
         <div className="bg-gray-100 p-6 rounded-lg">
           <div className="relative h-48 mb-4">
             <Image
-              src="/placeholder.svg?height=200&width=300"
+              src="/images/carousel/WhatsApp Image 2024-12-13 at 07.30.03_4f91a4c1.jpg"
               alt="Children's Education"
               layout="fill"
               objectFit="cover"
