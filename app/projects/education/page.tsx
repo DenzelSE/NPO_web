@@ -33,7 +33,7 @@ const educationImages = [
 export default function Education() {
   return (
     <div className="container mx-auto px-6 py-16">
-      <h1 className="text-4xl font-bold mb-8 gradient-text">Children's Education Initiative</h1>
+      <h1 className="text-4xl font-bold mb-8 gradient-text">Moving Garden</h1>
       <p className="text-lg mb-8 text-gray-700">
         Our education initiative aims to provide quality education to underprivileged children, empowering them for a
         brighter future.

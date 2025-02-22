@@ -16,7 +16,7 @@ export default function Projects() {
               className="rounded-lg"
             />
           </div>
-          <h2 className="text-2xl font-bold mb-4">Foundation</h2>
+          <h2 className="text-2xl font-bold mb-4">Nelson Mandela Jerseys</h2>
           <p className="mb-4">
             Our foundation focuses on sustainable development and community empowerment through various initiatives and
             partnerships.
@@ -35,7 +35,7 @@ export default function Projects() {
               className="rounded-lg"
             />
           </div>
-          <h2 className="text-2xl font-bold mb-4">Community-Based Project</h2>
+          <h2 className="text-2xl font-bold mb-4">Luteal Liberty</h2>
           <p className="mb-4">
             We work closely with local communities to address their unique needs and foster sustainable growth and
             development.
@@ -54,7 +54,7 @@ export default function Projects() {
               className="rounded-lg"
             />
           </div>
-          <h2 className="text-2xl font-bold mb-4">Children's Education</h2>
+          <h2 className="text-2xl font-bold mb-4">Moving Garden</h2>
           <p className="mb-4">
             Our education initiative aims to provide quality education to underprivileged children, empowering them for
             a brighter future.

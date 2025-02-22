@@ -1,0 +1,103 @@
+import Image from "next/image"
+import Link from "next/link"
+import { ArrowRight, Linkedin, Twitter, Globe } from "lucide-react"
+
+// Updated team member data with social links
+const teamMembers = [
+  {
+    name: "Nonhlanhla Nkosi",
+    role: "Founder & CEO",
+    image: "/images/team/jane-doe.jpg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/janedoe",
+      twitter: "https://twitter.com/janedoe",
+      website: "https://janedoe.com",
+    },
+  },
+  {
+    name: "Nonhlanhla Nkosi",
+    role: "Community Outreach Director",
+    image: "/images/team/john-smith.jpg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/johnsmith",
+      twitter: "https://twitter.com/johnsmith",
+    },
+  },
+  {
+    name: "Nonhlanhla Nkosi",
+    role: "Community Outreach Director",
+    image: "/images/team/john-smith.jpg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/johnsmith",
+      twitter: "https://twitter.com/johnsmith",
+    },
+  },
+  {
+    name: "Nonhlanhla Nkosi",
+    role: "Community Outreach Director",
+    image: "/images/team/john-smith.jpg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/johnsmith",
+      twitter: "https://twitter.com/johnsmith",
+    },
+  },
+
+]
+
+const MeetTheTeamSection = () => {
+  return (
+    <section className="py-20 bg-gray-50">
+      <div className="container mx-auto px-6">
+        <h2 className="text-3xl font-bold mb-12 text-center gradient-text">Meet Our Team</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+          {teamMembers.map((member, index) => (
+            <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
+              <div className="relative h-64 w-full">
+                <Image src={member.image || "/placeholder.svg"} alt={member.name} layout="fill" objectFit="cover" />
+              </div>
+              <div className="p-4">
+                <h3 className="text-xl font-semibold mb-1">{member.name}</h3>
+                <p className="text-gray-600 mb-3">{member.role}</p>
+                <div className="flex space-x-2">
+                  {member.socials.linkedin && (
+                    <a
+                      href={member.socials.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-400 hover:text-red-600 transition-colors"
+                    >
+                      <Linkedin size={20} />
+                    </a>
+                  )}
+                  {member.socials.twitter && (
+                    <a
+                      href={member.socials.twitter}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-400 hover:text-red-600 transition-colors"
+                    >
+                      <Twitter size={20} />
+                    </a>
+                  )}
+                  {member.socials.website && (
+                    <a
+                      href={member.socials.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-400 hover:text-red-600 transition-colors"
+                    >
+                      <Globe size={20} />
+                    </a>
+                  )}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default MeetTheTeamSection
+

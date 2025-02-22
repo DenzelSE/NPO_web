@@ -33,7 +33,7 @@ const communityImages = [
 export default function Community() {
   return (
     <div className="container mx-auto px-6 py-16">
-      <h1 className="text-4xl font-bold mb-8 gradient-text">Community-Based Project</h1>
+      <h1 className="text-4xl font-bold mb-8 gradient-text">Luteal Liberty</h1>
       <p className="text-lg mb-8 text-gray-700">
         Our community-based project focuses on addressing the unique needs of local communities and fostering
         sustainable growth and development.

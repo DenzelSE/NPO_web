@@ -33,7 +33,7 @@ const foundationImages = [
 export default function Foundation() {
   return (
     <div className="container mx-auto px-6 py-16">
-      <h1 className="text-4xl font-bold mb-8 gradient-text">Our Foundation</h1>
+      <h1 className="text-4xl font-bold mb-8 gradient-text">Nelson Mandela Jerseys</h1>
       <p className="text-lg mb-8">
         Our foundation is dedicated to supporting sustainable development and community empowerment through various
         initiatives and partnerships.
