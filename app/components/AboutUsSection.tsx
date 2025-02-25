@@ -10,7 +10,7 @@ const AboutUsSection = () => {
           <div className="lg:w-1/2">
             <div className="relative h-[400px] w-full rounded-lg overflow-hidden shadow-xl">
               <Image
-                src="/images/about-us-image.jpg"
+                src="/images/carousel/AfricaRefined.png"
                 alt="Africa Refined community impact"
                 layout="fill"
                 objectFit="cover"

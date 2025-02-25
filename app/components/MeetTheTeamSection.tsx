@@ -7,7 +7,7 @@ const teamMembers = [
   {
     name: "Nonhlanhla Nkosi",
     role: "Founder & CEO",
-    image: "/images/team/jane-doe.jpg",
+    image: "/images/carousel/TeamPic.jpg",
     socials: {
       linkedin: "https://www.linkedin.com/in/janedoe",
       twitter: "https://twitter.com/janedoe",
@@ -17,7 +17,7 @@ const teamMembers = [
   {
     name: "Nonhlanhla Nkosi",
     role: "Community Outreach Director",
-    image: "/images/team/john-smith.jpg",
+    image: "/images/carousel/TeamPic.jpg",
     socials: {
       linkedin: "https://www.linkedin.com/in/johnsmith",
       twitter: "https://twitter.com/johnsmith",
@@ -26,7 +26,7 @@ const teamMembers = [
   {
     name: "Nonhlanhla Nkosi",
     role: "Community Outreach Director",
-    image: "/images/team/john-smith.jpg",
+    image: "/images/carousel/TeamPic.jpg",
     socials: {
       linkedin: "https://www.linkedin.com/in/johnsmith",
       twitter: "https://twitter.com/johnsmith",
@@ -35,7 +35,7 @@ const teamMembers = [
   {
     name: "Nonhlanhla Nkosi",
     role: "Community Outreach Director",
-    image: "/images/team/john-smith.jpg",
+    image: "/images/carousel/TeamPic.jpg",
     socials: {
       linkedin: "https://www.linkedin.com/in/johnsmith",
       twitter: "https://twitter.com/johnsmith",
