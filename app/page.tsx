@@ -43,8 +43,8 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center mb-12 gradient-text">Our Impact</h2>
           <ProjectCarousel />
         </div>
-        <StatsSection />
       </section>
+        <StatsSection />
         
 
       {/* About Us Section */}

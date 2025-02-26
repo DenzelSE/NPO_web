@@ -32,7 +32,7 @@ const ProjectCarousel = () => {
                 objectFit="cover"
                 className="transition-transform duration-700 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-pink-500/80 via-pink-500/40 to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-pink-300/80 via-pink-500/40 to-transparent"></div>
               <div className="absolute bottom-8 left-8 right-8 text-white">
                 <h3 className="text-2xl font-bold mb-2">{image.name}</h3>
                 <p className="text-lg text-white/90">{image.description}</p>
