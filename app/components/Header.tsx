@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+import Image from "next/image"
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
 
@@ -27,13 +28,19 @@ const Header = () => {
   return (
     <header
       className={`fixed w-full z-50 transition-all duration-300 ${
-        isScrolled ? "bg-black/40 backdrop-blur-md" : "bg-transparent"
+        isScrolled ? "bg-black/30 backdrop-blur-md" : "bg-transparent"
       }`}
     >
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="text-2xl font-bold text-white">
-            Africa<span className="text-red-600">Refined</span>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/images/carousel/AfricaRefinedLogo.png" // Adjust this path if your logo is located elsewhere
+              alt="Africa Refined Logo"
+              width={250} // Adjust the width and height to fit your logo
+              height={150}
+              className="w-auto h-20 px-10" // This ensures the logo maintains its aspect ratio
+            />
           </Link>
 
           {/* Mobile menu button */}
