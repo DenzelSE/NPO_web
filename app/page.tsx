@@ -4,6 +4,7 @@ import ProjectCarousel from "./components/ProjectCarousel"
 import AboutUsSection from "./components/AboutUsSection"
 import BackgroundImage from "./components/BackgroundImage"
 import MeetTheTeamSection from "./components/MeetTheTeamSection"
+import StatsSection from "./components/StatsSection"
 
 export default function Home() {
   return (
@@ -42,7 +43,9 @@ export default function Home() {
           <h2 className="text-4xl font-bold text-center mb-12 gradient-text">Our Impact</h2>
           <ProjectCarousel />
         </div>
+        <StatsSection />
       </section>
+        
 
       {/* About Us Section */}
       <AboutUsSection />

@@ -1,48 +1,62 @@
 "use client"
 
 import Link from "next/link"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsScrolled(true)
+      } else {
+        setIsScrolled(false)
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll)
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [])
 
   return (
-    <header className="fixed w-full bg-white/80 backdrop-blur-md z-50">
+    <header
+      className={`fixed w-full z-50 transition-all duration-300 ${
+        isScrolled ? "bg-black/40 backdrop-blur-md" : "bg-transparent"
+      }`}
+    >
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-        <Link href="/" className="text-2xl font-bold text-white">
+          <Link href="/" className="text-2xl font-bold text-white">
             Africa<span className="text-red-600">Refined</span>
           </Link>
 
           {/* Mobile menu button */}
-          <button onClick={() => setIsOpen(!isOpen)} className="lg:hidden">
-            {isOpen ? <X className="h-6 w-6 text-pink-500" /> : <Menu className="h-6 w-6 text-pink-500" />}
+          <button onClick={() => setIsOpen(!isOpen)} className="lg:hidden text-white">
+            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
 
           {/* Desktop menu */}
           <div className="hidden lg:flex items-center space-x-8">
-          <Link href="/about" className="text-gray-600 hover:text-red-500 transition-colors">
+            <Link href="/about" className="text-white hover:text-red-500 transition-colors">
               About
             </Link>
-            <Link href="/projects" className="text-gray-600 hover:text-red-500 transition-colors">
+            <Link href="/projects" className="text-white hover:text-red-500 transition-colors">
               Projects
             </Link>
-            
-            <Link href="/get-involved" className="text-gray-600 hover:text-red-500 transition-colors">
-              Get Involved
+            <Link href="/media" className="text-white hover:text-red-500 transition-colors">
+              Media
             </Link>
-            <Link href="/blog" className="text-gray-600 hover:text-red-500 transition-colors">
-              Blog
-            </Link>
-            <Link href="/contact" className="text-gray-600 hover:text-red-500 transition-colors">
+            <Link href="/contact" className="text-white hover:text-red-500 transition-colors">
               Contact
             </Link>
-            <Link
-              href="/donate"
-              className="px-4 py-2 bg-red-500 text-white rounded-full hover:bg-pink-600 transition-colors"
-            >
-              Donate Now
+            <Link href="/donate" className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors">
+              Donate Today
             </Link>
           </div>
         </div>
@@ -51,23 +65,23 @@ const Header = () => {
         {isOpen && (
           <div className="lg:hidden pt-4">
             <div className="flex flex-col space-y-4">
-              <Link href="/projects" className="text-gray-600 hover:text-pink-500 transition-colors">
+              <Link href="/about" className="text-white hover:text-red-500 transition-colors">
+                About
+              </Link>
+              <Link href="/projects" className="text-white hover:text-red-500 transition-colors">
                 Projects
               </Link>
-              <Link href="/get-involved" className="text-gray-600 hover:text-pink-500 transition-colors">
-                Get Involved
+              <Link href="/media" className="text-white hover:text-red-500 transition-colors">
+                Media
               </Link>
-              <Link href="/blog" className="text-gray-600 hover:text-pink-500 transition-colors">
-                Blog
-              </Link>
-              <Link href="/contact" className="text-gray-600 hover:text-pink-500 transition-colors">
+              <Link href="/contact" className="text-white hover:text-red-500 transition-colors">
                 Contact
               </Link>
               <Link
                 href="/donate"
-                className="px-4 py-2 bg-pink-500 text-white rounded-full hover:bg-pink-600 transition-colors text-center"
+                className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors text-center"
               >
-                Donate Now
+                Donate Today
               </Link>
             </div>
           </div>
