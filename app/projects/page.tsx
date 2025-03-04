@@ -40,7 +40,7 @@ export default function Projects() {
             We work closely with local communities to address their unique needs and foster sustainable growth and
             development.
           </p>
-          <Link href="/projects/community" className="text-blue-600 hover:underline">
+          <Link href="/projects/luteal" className="text-blue-600 hover:underline">
             Learn More
           </Link>
         </div>
