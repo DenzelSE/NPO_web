@@ -18,7 +18,7 @@ const AboutUsSection = () => {
             </div>
           </div>
           <div className="lg:w-1/2">
-            <h2 className="text-3xl font-bold mb-6 gradient-text">About us</h2>
+            <h2 className="text-3xl font-bold mb-6 text-red-500">About us</h2>
             <p className="text-gray-700 mb-6">
               Africa Refined is a community-based initiative established in 2024, merging a selection of projects into a
               collective that focuses on Community Development, Health Education, and Empowerment across communities in
