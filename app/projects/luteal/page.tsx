@@ -7,7 +7,7 @@ import { useEffect, useRef } from "react"
 
 const projectImages = [
   {
-    src: "/placeholder.svg?height=300&width=400",
+    src: "/images/Luteal/menstrual-calendar-concept_52683-46271.jpg",
     alt: "Luteal Liberty Workshop",
     width: 400,
     height: 300,
