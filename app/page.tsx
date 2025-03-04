@@ -20,7 +20,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link
-                href="/get-involved"
+                href="/getInvolved"
                 className="px-8 py-4 bg-red-600 text-white rounded-full hover:bg-red-700 transition-colors flex items-center justify-center gap-2"
               >
                 Get Involved
