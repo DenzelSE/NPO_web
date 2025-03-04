@@ -16,7 +16,7 @@ const projectImages = [
     date: "2024-02-15",
   },
   {
-    src: "/placeholder.svg?height=300&width=400",
+    src: "/images/Luteal/letual.webp",
     alt: "Community Outreach",
     width: 400,
     height: 300,
