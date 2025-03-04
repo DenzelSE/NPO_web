@@ -25,12 +25,12 @@ const projectImages = [
     date: "2024-01-30",
   },
   {
-    src: "/placeholder.svg?height=300&width=400",
+    src: "/images/Luteal/2019-06-06-00-50-32-197.jpg",
     alt: "Project Achievement",
     width: 400,
     height: 300,
     category: "achievement" as const,
-    title: "100 Schools Reached",
+    title: "Schools Reached",
     date: "2024-03-01",
   },
 ]
