@@ -12,7 +12,7 @@ const projectImages = [
     width: 400,
     height: 300,
     category: "event" as const,
-    title: "Menstrual Health Workshop",
+    title: "Menstrual Health Workshops",
     date: "2024-02-15",
   },
   {
