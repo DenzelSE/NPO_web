@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="bg-gray-100 text-gray-600">
       <div className="container mx-auto px-6 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <p className="gradient-text font-bold text-xl mb-4 md:mb-0">
+          <p className="text-black font-bold text-xl mb-4 md:mb-0">
             &copy; 2023 Africa Refined. All rights reserved.
           </p>
           <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
