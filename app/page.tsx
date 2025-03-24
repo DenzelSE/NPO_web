@@ -38,9 +38,9 @@ export default function Home() {
       </section>
 
       {/* Project Carousel */}
-      <section className="py-20 bg-gray-300">
-        <div className="container mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-12 gradient-text">Our Impact</h2>
+      <section className="py-20 bg-gray-100">
+        <div className="container mx-auto mx-w-6xl px-6">
+          <h2 className="text-5xl font-bold text-center mb-12 text">Our Impact</h2>
           <ProjectCarousel />
         </div>
       </section>
@@ -54,7 +54,7 @@ export default function Home() {
       {/* CTA Section */}
       <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-6">
-          <div className="bg-gradient-to-r from-red-600 to-red-800 rounded-3xl p-12 text-center text-white">
+          <div className="bg-black rounded-3xl p-12 text-center text-white">
             <h2 className="text-4xl font-bold mb-6">Make a Difference Today</h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto">
               Join us in our mission to create positive change. Your support can help transform lives and communities

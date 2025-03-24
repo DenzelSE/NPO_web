@@ -17,7 +17,7 @@ const ProjectCarousel = () => {
   }, [])
 
   return (
-    <div className="relative w-full overflow-hidden h-[500px] rounded-2xl">
+    <div className="relative w-full overflow-hidden h-[600px] rounded-2xl">
       <div
         className="flex transition-transform duration-1000 ease-in-out h-full"
         style={{ transform: `translateX(-${currentIndex * 100}%)` }}

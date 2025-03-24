@@ -18,13 +18,13 @@ const AboutUsSection = () => {
             </div>
           </div>
           <div className="lg:w-1/2">
-            <h2 className="text-3xl font-bold mb-6 text-red-500">About us</h2>
-            <p className="text-gray-700 mb-6">
+            <h2 className="text-5xl font-bold mb-6 text-black">About us</h2>
+            <p className="text-2xl text-gray-700 mb-6">
               Africa Refined is a community-based initiative established in 2024, merging a selection of projects into a
               collective that focuses on Community Development, Health Education, and Empowerment across communities in
               South Africa.
             </p>
-            <p className="text-gray-700 mb-6">
+            <p className="text-2xl text-gray-700 mb-6">
               Our mission is to drive sustainability, health, and empowerment within communities through impactful
               engagements. We strive to engender a community of knowledgeable individuals who empower one another in
               solidarity.
@@ -45,7 +45,7 @@ const AboutUsSection = () => {
               className="inline-flex items-center gap-2 bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors"
             >
               Learn More About Us
-              <ArrowRight className="w-5 h-5" />
+              <ArrowRight className="w-6 h-8" />
             </Link>
           </div>
         </div>

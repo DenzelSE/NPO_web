@@ -46,9 +46,9 @@ const teamMembers = [
 
 const MeetTheTeamSection = () => {
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gray-100">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold mb-12 text-center text-red-500">Meet Our Team</h2>
+        <h2 className="text-5xl font-bold mb-12 text-center text-black">Meet Our Team</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {teamMembers.map((member, index) => (
             <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
