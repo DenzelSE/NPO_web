@@ -73,6 +73,7 @@ export default function LutealLibertyPage() {
           />
         </div>
         <div className="relative container mx-auto px-6 pt-32 pb-20">
+          <div className="py-8"></div>
           <h1 className="text-5xl font-bold text-pink-400 mb-6">Luteal Liberty Project</h1>
           <p className="text-xl text-white/90 max-w-2xl">
             Empowering young girls through reproductive and menstrual health education while addressing the challenges

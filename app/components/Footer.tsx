@@ -3,7 +3,7 @@ import { Facebook, Twitter, Instagram, Linkedin, Youtube } from "lucide-react"
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-100 text-gray-600">
+    <footer className="bg-gray-300 text-black">
       <div className="container mx-auto px-6 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <p className="text-black font-bold text-xl mb-4 md:mb-0">
@@ -27,7 +27,7 @@ const Footer = () => {
                 href="https://facebook.com/africarefined"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-red-500 transition-colors"
+                className="text-black hover:text-red-500 transition-colors"
               >
                 <Facebook size={24} />
               </a>
@@ -35,7 +35,7 @@ const Footer = () => {
                 href="https://twitter.com/africarefined"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-red-500 transition-colors"
+                className="text-black hover:text-red-500 transition-colors"
               >
                 <Twitter size={24} />
               </a>
@@ -43,7 +43,7 @@ const Footer = () => {
                 href="https://instagram.com/africarefined"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-red-500 transition-colors"
+                className="text-black hover:text-red-500 transition-colors"
               >
                 <Instagram size={24} />
               </a>
@@ -51,7 +51,7 @@ const Footer = () => {
                 href="https://linkedin.com/company/africarefined"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-red-500 transition-colors"
+                className="text-black hover:text-red-500 transition-colors"
               >
                 <Linkedin size={24} />
               </a>
@@ -59,7 +59,7 @@ const Footer = () => {
                 href="https://youtube.com/africarefined"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-red-500 transition-colors"
+                className="text-black hover:text-red-500 transition-colors"
               >
                 <Youtube size={24} />
               </a>

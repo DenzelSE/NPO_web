@@ -5,6 +5,7 @@ import AboutUsSection from "./components/AboutUsSection"
 import BackgroundImage from "./components/BackgroundImage"
 import MeetTheTeamSection from "./components/MeetTheTeamSection"
 import StatsSection from "./components/StatsSection"
+import Image from "next/image"
 
 export default function Home() {
   return (
@@ -14,6 +15,15 @@ export default function Home() {
         <BackgroundImage/>
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
+          {/* <div className="mb-2 flex justify-center">
+              <Image
+                src="/images/carousel/AfricaRefinedLogo.png"
+                alt="Africa Refined Logo"
+                width={600}
+                height={100}
+                className="w-auto h-auto max-h-48"
+              />
+            </div> */}
             <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">Empowering Communities Across Africa</h1>
             <p className="text-xl md:text-2xl text-gray-200 mb-12">
               Join us in creating positive change and building brighter futures for our communities.

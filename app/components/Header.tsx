@@ -37,7 +37,7 @@ const Header = () => {
             <Image
               src="/images/carousel/AfricaRefinedLogo.png" // Adjust this path if your logo is located elsewhere
               alt="Africa Refined Logo"
-              width={250} // Adjust the width and height to fit your logo
+              width={300} // Adjust the width and height to fit your logo
               height={150}
               className="w-auto h-20 px-10" // This ensures the logo maintains its aspect ratio
             />

@@ -1,19 +1,85 @@
 "use client"
 
+import type React from "react"
+
 import Image from "next/image"
 import Link from "next/link"
-import { ArrowRight, ShoppingCart, Heart, Users, Calendar, Award } from "lucide-react"
+import { ArrowRight, ShoppingCart, Heart, Users, Calendar, Award, X, Loader2 } from "lucide-react"
 import { useState } from "react"
+import { sendOrderEmail } from "./actions/SendOrderEmail";
+
+// Form interface for order details
+interface OrderFormData {
+  name: string
+  email: string
+  phone: string
+  quantity: number
+  size: string
+}
 
 export default function CommunityPage() {
   const [activeTab, setActiveTab] = useState("about")
-  const [orderMessage, setOrderMessage] = useState("")
+  const [isModalOpen, setIsModalOpen] = useState(false)
+  const [selectedProduct, setSelectedProduct] = useState("")
+  const [orderStatus, setOrderStatus] = useState<{ success?: boolean; message?: string } | null>(null)
+  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [formData, setFormData] = useState<OrderFormData>({
+    name: "",
+    email: "",
+    phone: "",
+    quantity: 1,
+    size: "M",
+  })
 
   const handleOrder = (productName: string) => {
-    setOrderMessage(`Thank you for ordering the ${productName}! We'll contact you soon to complete your purchase.`)
-    setTimeout(() => {
-      setOrderMessage("")
-    }, 5000)
+    setSelectedProduct(productName)
+    setIsModalOpen(true)
+    setOrderStatus(null)
+  }
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+    const { name, value } = e.target
+    setFormData((prev) => ({
+      ...prev,
+      [name]: name === "quantity" ? Number.parseInt(value) || 1 : value,
+    }))
+  }
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+    setOrderStatus(null)
+
+    try {
+      // Send the order data to the server action
+      const result = await sendOrderEmail({
+        product: selectedProduct,
+        ...formData,
+      })
+
+      setOrderStatus(result)
+
+      // If successful, reset the form after a delay
+      if (result.success) {
+        setTimeout(() => {
+          setIsModalOpen(false)
+          setFormData({
+            name: "",
+            email: "",
+            phone: "",
+            quantity: 1,
+            size: "M",
+          })
+        }, 3000)
+      }
+    } catch (error) {
+      setOrderStatus({
+        success: false,
+        message: "An unexpected error occurred. Please try again.",
+      })
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   return (
@@ -22,7 +88,7 @@ export default function CommunityPage() {
       <section className="relative py-20 bg-gradient-to-b from-red-900 to-red-800 text-white">
         <div className="absolute inset-0 opacity-30">
           <Image
-            src="/images/carousel/WhatsApp Image 2024-12-17 at 05.58.08_da6e057e.jpg"
+            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20From%202025-03-24%2013-41-23-rVoW3hSHZaLqYtBikV9D8iPHVDlLXi.png"
             alt="Nelson Mandela Jersey Initiative"
             layout="fill"
             objectFit="cover"
@@ -135,7 +201,7 @@ export default function CommunityPage() {
               <div className="relative">
                 <div className="relative h-[600px] rounded-lg overflow-hidden shadow-xl">
                   <Image
-                    src="/images/carousel/WhatsApp Image 2024-12-05 at 00.11.13_5d2c4a45.jpg"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20From%202025-03-24%2013-41-23-rVoW3hSHZaLqYtBikV9D8iPHVDlLXi.png"
                     alt="Nelson Mandela Jersey Initiative"
                     layout="fill"
                     objectFit="cover"
@@ -152,7 +218,7 @@ export default function CommunityPage() {
         <section className="py-20 bg-black text-white relative">
           <div className="absolute inset-0 opacity-10">
             <Image
-              src="/images/carousel/WhatsApp Image 2024-12-17 at 12.19.29_a349d8e0.jpg"
+              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20From%202025-03-24%2013-41-31-gAeMGLEk6ecLQLgECejh1DDNEsTxBx.png"
               alt="Madiba Style Background"
               layout="fill"
               objectFit="cover"
@@ -167,15 +233,11 @@ export default function CommunityPage() {
               </p>
             </div>
 
-            {orderMessage && (
-              <div className="bg-green-600 text-white p-4 rounded-lg mb-8 text-center">{orderMessage}</div>
-            )}
-
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-black border border-gray-800 rounded-lg overflow-hidden">
                 <div className="relative h-80">
                   <Image
-                    src="/images/carousel/WhatsApp Image 2024-12-17 at 12.19.29_a349d8e0.jpg"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20From%202025-03-24%2013-41-31-gAeMGLEk6ecLQLgECejh1DDNEsTxBx.png"
                     alt="Madiba Jersey"
                     layout="fill"
                     objectFit="contain"
@@ -197,7 +259,7 @@ export default function CommunityPage() {
               <div className="bg-black border border-gray-800 rounded-lg overflow-hidden">
                 <div className="relative h-80">
                   <Image
-                    src="/images/carousel/WhatsApp Image 2024-12-17 at 12.19.29_a349d8e0.jpg"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20From%202025-03-24%2013-41-31-gAeMGLEk6ecLQLgECejh1DDNEsTxBx.png"
                     alt="Madiba T-Shirt"
                     layout="fill"
                     objectFit="contain"
@@ -219,7 +281,7 @@ export default function CommunityPage() {
               <div className="bg-black border border-gray-800 rounded-lg overflow-hidden">
                 <div className="relative h-80">
                   <Image
-                    src="/images/carousel/WhatsApp Image 2024-12-17 at 12.19.29_a349d8e0.jpg"
+                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20From%202025-03-24%2013-41-31-gAeMGLEk6ecLQLgECejh1DDNEsTxBx.png"
                     alt="Madiba T-Shirt (Blue)"
                     layout="fill"
                     objectFit="contain"
@@ -262,7 +324,7 @@ export default function CommunityPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src="/images/carousel/WhatsApp Image 2024-12-17 at 12.19.29_a349d8e0.jpg"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20From%202025-03-24%2013-41-23-rVoW3hSHZaLqYtBikV9D8iPHVDlLXi.png"
                   alt="Mandela Jersey Distribution"
                   layout="fill"
                   objectFit="cover"
@@ -327,7 +389,7 @@ export default function CommunityPage() {
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl order-first md:order-last">
                 <Image
-                  src="/images/carousel/WhatsApp Image 2024-12-17 at 12.19.29_a349d8e0.jpg"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20From%202025-03-24%2013-41-31-gAeMGLEk6ecLQLgECejh1DDNEsTxBx.png"
                   alt="Mandela Jersey"
                   layout="fill"
                   objectFit="cover"
@@ -401,6 +463,149 @@ export default function CommunityPage() {
           </div>
         </div>
       </section>
+
+      {/* Order Modal */}
+      {isModalOpen && (
+        <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4">
+          <div className="bg-white rounded-lg w-full max-w-md relative">
+            <button
+              onClick={() => setIsModalOpen(false)}
+              className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
+              disabled={isSubmitting}
+            >
+              <X className="w-6 h-6" />
+            </button>
+
+            <div className="p-6">
+              <h3 className="text-2xl font-bold mb-4 text-gray-800">Order {selectedProduct}</h3>
+
+              {orderStatus && (
+                <div
+                  className={`${
+                    orderStatus.success ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"
+                  } p-4 rounded-lg mb-4`}
+                >
+                  {orderStatus.message}
+                </div>
+              )}
+
+              <form onSubmit={handleSubmit} className="space-y-4">
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+                    Full Name
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    value={formData.name}
+                    onChange={handleInputChange}
+                    className="w-full p-2 border border-gray-300 rounded-md"
+                    required
+                    disabled={isSubmitting}
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+                    Email Address
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    className="w-full p-2 border border-gray-300 rounded-md"
+                    required
+                    disabled={isSubmitting}
+                  />
+                </div>
+
+                <div>
+                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
+                    Phone Number
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    value={formData.phone}
+                    onChange={handleInputChange}
+                    className="w-full p-2 border border-gray-300 rounded-md"
+                    required
+                    disabled={isSubmitting}
+                  />
+                </div>
+
+                <div className="grid grid-cols-2 gap-4">
+                  <div>
+                    <label htmlFor="quantity" className="block text-sm font-medium text-gray-700 mb-1">
+                      Quantity
+                    </label>
+                    <input
+                      type="number"
+                      id="quantity"
+                      name="quantity"
+                      min="1"
+                      value={formData.quantity}
+                      onChange={handleInputChange}
+                      className="w-full p-2 border border-gray-300 rounded-md"
+                      required
+                      disabled={isSubmitting}
+                    />
+                  </div>
+
+                  <div>
+                    <label htmlFor="size" className="block text-sm font-medium text-gray-700 mb-1">
+                      Size
+                    </label>
+                    <select
+                      id="size"
+                      name="size"
+                      value={formData.size}
+                      onChange={handleInputChange}
+                      className="w-full p-2 border border-gray-300 rounded-md"
+                      required
+                      disabled={isSubmitting}
+                    >
+                      <option value="XS">XS</option>
+                      <option value="S">S</option>
+                      <option value="M">M</option>
+                      <option value="L">L</option>
+                      <option value="XL">XL</option>
+                      <option value="XXL">XXL</option>
+                    </select>
+                  </div>
+                </div>
+
+                <button
+                  type="submit"
+                  className="w-full bg-red-600 hover:bg-red-700 text-white py-3 px-4 rounded-lg transition-colors flex items-center justify-center gap-2"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="w-5 h-5 animate-spin" />
+                      Sending...
+                    </>
+                  ) : (
+                    <>
+                      <ShoppingCart className="w-5 h-5" />
+                      Send Order Information
+                    </>
+                  )}
+                </button>
+
+                <p className="text-sm text-gray-500 text-center mt-4">
+                  Your order information will be sent to our team, and a confirmation will be sent to your email. We'll
+                  contact you shortly to confirm your order and arrange payment.
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }
