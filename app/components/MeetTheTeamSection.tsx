@@ -1,6 +1,5 @@
 import Image from "next/image"
-import Link from "next/link"
-import { ArrowRight, Linkedin, Twitter, Globe } from "lucide-react"
+import { Linkedin, Twitter, Globe } from "lucide-react"
 
 // Updated team member data with social links
 const teamMembers = [

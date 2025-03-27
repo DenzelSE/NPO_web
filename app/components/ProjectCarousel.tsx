@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react"
 import Image from "next/image"
 import { carouselImages } from "@/config/carousel-images"
-import { CarouselImage } from "@/types/image"
 
 const ProjectCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0)

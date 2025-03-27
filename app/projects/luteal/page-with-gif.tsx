@@ -49,8 +49,8 @@ export default function LutealLibertyPage() {
         <div className="relative container mx-auto px-6 pt-32 pb-20">
           <h1 className="text-5xl font-bold text-white mb-6">Luteal Liberty Project</h1>
           <p className="text-xl text-white/90 max-w-2xl">
-            Empowering young girls through reproductive and menstrual health education while addressing the challenges
-            they face during their transition through puberty.
+            {`Empowering young girls through reproductive and menstrual health education while addressing the challenges
+            they face during their transition through puberty.`}
           </p>
         </div>
       </div>
@@ -98,15 +98,15 @@ export default function LutealLibertyPage() {
             <div>
               <h2 className="text-3xl font-bold mb-6 text-pink-600">About Luteal Liberty</h2>
               <p className="text-gray-700 mb-6">
-                The concept behind the Luteal Liberty project title stems from the fourth and final phase of the
+                {`The concept behind the Luteal Liberty project title stems from the fourth and final phase of the
                 menstrual cycle, known as the luteal phase. During this phase, the corpus luteum, formed after
                 ovulation, produces hormones and exits the body, as the body prepares for a potential pregnancy by
-                increasing progesterone levels.
+                increasing progesterone levels.`}
               </p>
               <p className="text-gray-700 mb-6">
-                'Liberty' represents freedom, independence, and empowerment. It signifies the freedom to understand and
+                {`'Liberty' represents freedom, independence, and empowerment. It signifies the freedom to understand and
                 manage one's body, the empowerment that comes from education and self-awareness, and the ability to
-                independently make informed decisions about one's health.
+                independently make informed decisions about one's health.`}
               </p>
               <div className="space-y-4">
                 <h3 className="text-xl font-semibold text-pink-600">Key Focus Areas:</h3>

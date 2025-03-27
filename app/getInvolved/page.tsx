@@ -1,5 +1,4 @@
 "use client"
-
 import type React from "react"
 import { useState } from "react"
 import FormModal from "../components/FormModal"
@@ -235,7 +234,7 @@ export default function GetInvolved() {
           </button>
 
           <p className="text-sm text-gray-500 text-center mt-2">
-            We'll contact you with payment details after you submit this form.
+            {`We'll contact you with payment details after you submit this form.`}
           </p>
         </form>
       </FormModal>

@@ -5,7 +5,6 @@ import AboutUsSection from "./components/AboutUsSection"
 import BackgroundImage from "./components/BackgroundImage"
 import MeetTheTeamSection from "./components/MeetTheTeamSection"
 import StatsSection from "./components/StatsSection"
-import Image from "next/image"
 import ContactFormSection from "./components/ContactFormSection"
 
 export default function Home() {

@@ -13,7 +13,7 @@ interface OrderData {
 }
 
 // Default organization email to receive all orders
-const ORGANIZATION_EMAIL = "orders@africarefined.org"
+// const ORGANIZATION_EMAIL = "orders@africarefined.org"
 
 export async function sendOrderEmail(data: OrderData): Promise<{ success: boolean; message: string }> {
   try {

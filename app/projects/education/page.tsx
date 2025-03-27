@@ -1,8 +1,7 @@
 "use client"
 
 import Image from "next/image"
-import Link from "next/link"
-import { ArrowRight, Leaf, Users, BookOpen, Globe } from "lucide-react"
+import {Leaf, Users, BookOpen, Globe } from "lucide-react"
 import { useState } from "react"
 
 export default function EducationPage() {

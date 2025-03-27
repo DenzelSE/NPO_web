@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import Image from "next/image"
 import Link from "next/link"
 import { ArrowRight, ShoppingCart, Heart, Users, Calendar, Award, X, Loader2 } from "lucide-react"
@@ -158,7 +157,7 @@ export default function CommunityPage() {
                   Rolihlahla Mandela.`}
                 </p>
                 <div className="space-y-4 mt-8">
-                  <h3 className="text-3xl font-semibold text-red-600">Key Focus Areas:</h3>
+                  <h3 className="text-3xl font-semibold text-red-600">{`Key Focus Areas:`}</h3>
                   <div className="space-y-4">
                     <div>
                       <h4 className="text-2xl font-bold text-gray-800">Seasonal Timing</h4>
@@ -176,7 +175,7 @@ export default function CommunityPage() {
                       </p>
                     </div>
                     <div>
-                      <h4 className="text-2xl font-bold text-gray-800">Celebrating Mandela's Legacy</h4>
+                      <h4 className="text-2xl font-bold text-gray-800">{`Celebrating Mandela's Legacy`}</h4>
                       <p className="text-lg text-gray-700">
                         {`The jerseys feature an image of Nelson Mandela, serving as a reminder of his legacy and the
                         values he stood for. This helps keep his memory alive and inspires others to continue his work.`}
@@ -244,7 +243,7 @@ export default function CommunityPage() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Madiba Jersey - R500</h3>
+                  <h3 className="text-xl font-bold mb-2">{`Madiba Jersey - R500`}</h3>
                   <p className="text-lg text-gray-400 mb-4">Black jersey featuring Nelson Mandela with traditional pattern</p>
                   <button
                     onClick={() => handleOrder("Madiba Jersey - R500")}
@@ -266,8 +265,8 @@ export default function CommunityPage() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Madiba T-Shirt - R250</h3>
-                  <p className="text-lg text-gray-400 mb-4">Stylish t-shirt celebrating Nelson Mandela's legacy</p>
+                  <h3 className="text-xl font-bold mb-2">{`Madiba T-Shirt - R250`}</h3>
+                  <p className="text-lg text-gray-400 mb-4">{`Stylish t-shirt celebrating Nelson Mandela's legacy`}</p>
                   <button
                     onClick={() => handleOrder("Madiba T-Shirt - R250")}
                     className="w-full bg-red-600 hover:bg-red-700 text-white py-3 px-4 rounded-lg transition-colors flex items-center justify-center gap-2"
@@ -288,8 +287,8 @@ export default function CommunityPage() {
                   />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">Madiba T-Shirt (Blue) - R250</h3>
-                  <p className="text-lg text-gray-400 mb-4">Blue jersey featuring Nelson Mandela's portrait pattern</p>
+                  <h3 className="text-xl font-bold mb-2">{`Madiba T-Shirt (Blue) - R250`}</h3>
+                  <p className="text-lg text-gray-400 mb-4">{`Blue jersey featuring Nelson Mandela's portrait pattern`}</p>
                   <button
                     onClick={() => handleOrder("Madiba T-Shirt (Blue) - R250")}
                     className="w-full bg-red-600 hover:bg-red-700 text-white py-3 px-4 rounded-lg transition-colors flex items-center justify-center gap-2"
@@ -362,7 +361,7 @@ export default function CommunityPage() {
 
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16 md:flex-row-reverse">
               <div>
-                <h3 className="text-2xl font-bold mb-6 text-red-600">Preserving Mandela's Legacy</h3>
+                <h3 className="text-2xl font-bold mb-6 text-red-600">{`Preserving Mandela's Legacy`}</h3>
                 <p className="text-gray-700 mb-6">
                   {`Each jersey serves as a reminder of Nelson Mandela's legacy and the values he stood for. By featuring
                   his image and promoting his ideals, we help keep his memory alive and inspire others to continue his
@@ -371,11 +370,11 @@ export default function CommunityPage() {
                 <ul className="space-y-2">
                   <li className="flex items-start">
                     <span className="text-red-600 mr-2">•</span>
-                    <span className="text-gray-700">Celebrated Mandela's vision and values</span>
+                    <span className="text-gray-700">{`Celebrated Mandela's vision and values`}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-red-600 mr-2">•</span>
-                    <span className="text-gray-700">Educated younger generations about Mandela's impact</span>
+                    <span className="text-gray-700">{`Educated younger generations about Mandela's impact`}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="text-red-600 mr-2">•</span>
