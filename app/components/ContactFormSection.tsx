@@ -1,14 +1,7 @@
 
 "use client";
-import { Phone } from "lucide-react";
-import React, { ChangeEvent, FormEvent, useState } from "react";
+import React, { useState } from "react";
 
-// interface FormData {
-//   name: string;
-//   email: string;
-//   Message: string;
-//   Phone: string;
-// }
 
 export default function ContactFormSection() {
     const [isSubmitting, setIsSubmitting] = useState(false)
