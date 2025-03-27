@@ -92,9 +92,11 @@ export default function GetInvolved() {
         }
       }, 2000)
     } catch (error) {
+      console.log(error);
       setFormStatus({
         success: false,
         message: "Something went wrong. Please try again later.",
+        
       })
     } finally {
       setIsSubmitting(false)

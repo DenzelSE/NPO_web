@@ -72,6 +72,7 @@ export default function CommunityPage() {
         }, 3000)
       }
     } catch (error) {
+      console.log(error)
       setOrderStatus({
         success: false,
         message: "An unexpected error occurred. Please try again.",
