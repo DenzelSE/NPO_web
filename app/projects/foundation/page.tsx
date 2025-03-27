@@ -88,7 +88,7 @@ export default function CommunityPage() {
       <section className="relative py-20 bg-gradient-to-b from-red-900 to-red-800 text-white">
         <div className="absolute inset-0 opacity-30">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20From%202025-03-24%2013-41-23-rVoW3hSHZaLqYtBikV9D8iPHVDlLXi.png"
+            src="/images/carousel/WhatsApp Image 2024-12-17 at 05.58.08_da6e057e.jpg"
             alt="Nelson Mandela Jersey Initiative"
             layout="fill"
             objectFit="cover"
@@ -144,13 +144,13 @@ export default function CommunityPage() {
           <div className="container mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <h2 className="text-3xl font-bold mb-6 gradient-text">About the Initiative</h2>
-                <p className="text-gray-700 mb-6">
+                <h2 className="text-3xl font-bold mb-6 text-red-600">About the Initiative</h2>
+                <p className="text-lg text-gray-700 mb-6">
                   Established in 2024, the Nelson Mandela Jersey initiative focuses on making a positive impact and
                   continuing Mandela's legacy of service and compassion. This heartwarming project ties into the broader
                   Mandela Day initiative and aligns with the spirit of Nelson Mandela Day.
                 </p>
-                <p className="text-gray-700 mb-6">
+                <p className="text-lg text-gray-700 mb-6">
                   Under the theme 'Keeping Warm this Mandela Month', this initiative occurs seasonally between June and
                   July each year, which is winter in South Africa. Its timing ensures that the jerseys are distributed
                   when they are most needed to help people stay warm. The Nelson Mandela Jersey Project is one amongst
@@ -158,33 +158,33 @@ export default function CommunityPage() {
                   Rolihlahla Mandela.
                 </p>
                 <div className="space-y-4 mt-8">
-                  <h3 className="text-xl font-semibold text-red-600">Key Focus Areas:</h3>
+                  <h3 className="text-3xl font-semibold text-red-600">Key Focus Areas:</h3>
                   <div className="space-y-4">
                     <div>
-                      <h4 className="font-bold text-gray-800">Seasonal Timing</h4>
-                      <p className="text-gray-700">
+                      <h4 className="text-2xl font-bold text-gray-800">Seasonal Timing</h4>
+                      <p className="text-lg text-gray-700">
                         The event takes place between June and July each year, which is winter in South Africa. This
                         timing ensures that the jerseys are distributed when they are most needed to help people stay
                         warm.
                       </p>
                     </div>
                     <div>
-                      <h4 className="font-bold text-gray-800">Community Support</h4>
-                      <p className="text-gray-700">
+                      <h4 className="text-2xl font-bold text-gray-800">Community Support</h4>
+                      <p className="text-lg text-gray-700">
                         By providing jerseys to disadvantaged communities, the project addresses immediate needs and
                         offers practical support to those who may struggle with the cold weather.
                       </p>
                     </div>
                     <div>
-                      <h4 className="font-bold text-gray-800">Celebrating Mandela's Legacy</h4>
-                      <p className="text-gray-700">
+                      <h4 className="text-2xl font-bold text-gray-800">Celebrating Mandela's Legacy</h4>
+                      <p className="text-lg text-gray-700">
                         The jerseys feature an image of Nelson Mandela, serving as a reminder of his legacy and the
                         values he stood for. This helps keep his memory alive and inspires others to continue his work.
                       </p>
                     </div>
                     <div>
-                      <h4 className="font-bold text-gray-800">67 Minutes of Service</h4>
-                      <p className="text-gray-700">
+                      <h4 className="text-2xl font-bold text-gray-800">67 Minutes of Service</h4>
+                      <p className="text-lg text-gray-700">
                         The project ties into the broader Mandela Day initiative, which encourages people to spend 67
                         minutes doing something positive for their communities.
                       </p>
@@ -192,16 +192,16 @@ export default function CommunityPage() {
                   </div>
                 </div>
                 <div className="mt-8">
-                  <blockquote className="italic text-gray-700 border-l-4 border-red-600 pl-4 py-2">
+                  <blockquote className="italic text-gray-700 border-l-4 text-lg border-red-600 pl-4 py-2">
                     "There can be no greater gift than that of giving one's time and energy to help others without
                     expecting anything in return." - Nelson Mandela
                   </blockquote>
                 </div>
               </div>
               <div className="relative">
-                <div className="relative h-[600px] rounded-lg overflow-hidden shadow-xl">
+                <div className="relative h-[800px] rounded-lg overflow-hidden shadow-xl">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20From%202025-03-24%2013-41-23-rVoW3hSHZaLqYtBikV9D8iPHVDlLXi.png"
+                    src="/images/carousel/WhatsApp Image 2024-12-05 at 00.11.13_5d2c4a45.jpg"
                     alt="Nelson Mandela Jersey Initiative"
                     layout="fill"
                     objectFit="cover"
@@ -218,7 +218,7 @@ export default function CommunityPage() {
         <section className="py-20 bg-black text-white relative">
           <div className="absolute inset-0 opacity-10">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20From%202025-03-24%2013-41-31-gAeMGLEk6ecLQLgECejh1DDNEsTxBx.png"
+              src="/images/carousel/WhatsApp Image 2024-12-17 at 05.54.11_889e6d00.jpg"
               alt="Madiba Style Background"
               layout="fill"
               objectFit="cover"
@@ -226,8 +226,8 @@ export default function CommunityPage() {
           </div>
           <div className="container mx-auto px-6 relative z-10">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-6">SHOP MADIBA STYLE</h2>
-              <p className="text-lg max-w-3xl mx-auto">
+              <h2 className="text-5xl font-bold mb-6">SHOP MADIBA STYLE</h2>
+              <p className="text-xl max-w-3xl mx-auto">
                 By purchasing these products, you are contributing to the work and fundraiser of Africa Refined. Seize
                 the moment and join us in keeping the Madiba legacy alive.
               </p>
@@ -235,9 +235,9 @@ export default function CommunityPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="bg-black border border-gray-800 rounded-lg overflow-hidden">
-                <div className="relative h-80">
+                <div className="relative h-[400px]">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20From%202025-03-24%2013-41-31-gAeMGLEk6ecLQLgECejh1DDNEsTxBx.png"
+                    src="/images/carousel/WhatsApp Image 2024-12-17 at 05.54.11_889e6d00.jpg"
                     alt="Madiba Jersey"
                     layout="fill"
                     objectFit="contain"
@@ -245,9 +245,9 @@ export default function CommunityPage() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">Madiba Jersey - R500</h3>
-                  <p className="text-gray-400 mb-4">Black jersey featuring Nelson Mandela with traditional pattern</p>
+                  <p className="text-lg text-gray-400 mb-4">Black jersey featuring Nelson Mandela with traditional pattern</p>
                   <button
-                    onClick={() => handleOrder("Madiba Jersey")}
+                    onClick={() => handleOrder("Madiba Jersey - R500")}
                     className="w-full bg-red-600 hover:bg-red-700 text-white py-3 px-4 rounded-lg transition-colors flex items-center justify-center gap-2"
                   >
                     <ShoppingCart className="w-5 h-5" />
@@ -257,9 +257,9 @@ export default function CommunityPage() {
               </div>
 
               <div className="bg-black border border-gray-800 rounded-lg overflow-hidden">
-                <div className="relative h-80">
+                <div className="relative h-[400px]">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20From%202025-03-24%2013-41-31-gAeMGLEk6ecLQLgECejh1DDNEsTxBx.png"
+                    src="/images/carousel/WhatsApp Image 2024-12-17 at 05.54.11_889e6d00.jpg"
                     alt="Madiba T-Shirt"
                     layout="fill"
                     objectFit="contain"
@@ -267,9 +267,9 @@ export default function CommunityPage() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">Madiba T-Shirt - R250</h3>
-                  <p className="text-gray-400 mb-4">Stylish t-shirt celebrating Nelson Mandela's legacy</p>
+                  <p className="text-lg text-gray-400 mb-4">Stylish t-shirt celebrating Nelson Mandela's legacy</p>
                   <button
-                    onClick={() => handleOrder("Madiba T-Shirt")}
+                    onClick={() => handleOrder("Madiba T-Shirt - R250")}
                     className="w-full bg-red-600 hover:bg-red-700 text-white py-3 px-4 rounded-lg transition-colors flex items-center justify-center gap-2"
                   >
                     <ShoppingCart className="w-5 h-5" />
@@ -279,9 +279,9 @@ export default function CommunityPage() {
               </div>
 
               <div className="bg-black border border-gray-800 rounded-lg overflow-hidden">
-                <div className="relative h-80">
+                <div className="relative h-[400px]">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20From%202025-03-24%2013-41-31-gAeMGLEk6ecLQLgECejh1DDNEsTxBx.png"
+                    src="/images/carousel/WhatsApp Image 2024-12-17 at 05.54.11_889e6d00.jpg"
                     alt="Madiba T-Shirt (Blue)"
                     layout="fill"
                     objectFit="contain"
@@ -289,9 +289,9 @@ export default function CommunityPage() {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2">Madiba T-Shirt (Blue) - R250</h3>
-                  <p className="text-gray-400 mb-4">Blue t-shirt featuring Nelson Mandela's portrait</p>
+                  <p className="text-lg text-gray-400 mb-4">Blue jersey featuring Nelson Mandela's portrait pattern</p>
                   <button
-                    onClick={() => handleOrder("Madiba T-Shirt (Blue)")}
+                    onClick={() => handleOrder("Madiba T-Shirt (Blue) - R250")}
                     className="w-full bg-red-600 hover:bg-red-700 text-white py-3 px-4 rounded-lg transition-colors flex items-center justify-center gap-2"
                   >
                     <ShoppingCart className="w-5 h-5" />
@@ -324,7 +324,7 @@ export default function CommunityPage() {
             <div className="grid md:grid-cols-2 gap-12 items-center mb-16">
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20From%202025-03-24%2013-41-23-rVoW3hSHZaLqYtBikV9D8iPHVDlLXi.png"
+                  src="/images/carousel/WhatsApp Image 2024-12-17 at 12.05.01_3b9a8aab.jpg"
                   alt="Mandela Jersey Distribution"
                   layout="fill"
                   objectFit="cover"
@@ -389,7 +389,7 @@ export default function CommunityPage() {
               </div>
               <div className="relative h-[400px] rounded-lg overflow-hidden shadow-xl order-first md:order-last">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%20From%202025-03-24%2013-41-31-gAeMGLEk6ecLQLgECejh1DDNEsTxBx.png"
+                  src="/images/carousel/WhatsApp Image 2024-12-17 at 12.06.22_69a56246.jpg"
                   alt="Mandela Jersey"
                   layout="fill"
                   objectFit="cover"
@@ -467,7 +467,7 @@ export default function CommunityPage() {
       {/* Order Modal */}
       {isModalOpen && (
         <div className="fixed inset-0 bg-black/70 flex items-center justify-center z-50 p-4">
-          <div className="bg-white rounded-lg w-full max-w-md relative">
+          <div className="bg-white rounded-lg w-full max-w-xl relative">
             <button
               onClick={() => setIsModalOpen(false)}
               className="absolute top-4 right-4 text-gray-500 hover:text-gray-700"
@@ -575,6 +575,7 @@ export default function CommunityPage() {
                       <option value="L">L</option>
                       <option value="XL">XL</option>
                       <option value="XXL">XXL</option>
+                      <option value="XXL">XXXL</option>
                     </select>
                   </div>
                 </div>
