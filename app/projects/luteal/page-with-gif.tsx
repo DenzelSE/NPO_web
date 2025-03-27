@@ -63,28 +63,28 @@ export default function LutealLibertyPage() {
               <div className="flex justify-center mb-4">
                 <Heart className="w-10 h-10 text-pink-500" />
               </div>
-              <h3 className="text-2xl font-bold text-pink-600">100+</h3>
+              <h3 className="text-2xl font-bold text-pink-600">{`100+`}</h3>
               <p className="text-gray-600">Schools Reached</p>
             </div>
             <div className="bg-pink-50 rounded-xl p-6 text-center">
               <div className="flex justify-center mb-4">
                 <Users className="w-10 h-10 text-pink-500" />
               </div>
-              <h3 className="text-2xl font-bold text-pink-600">5,000+</h3>
+              <h3 className="text-2xl font-bold text-pink-600">{`5,000+<`}/h3>
               <p className="text-gray-600">Girls Supported</p>
             </div>
             <div className="bg-pink-50 rounded-xl p-6 text-center">
               <div className="flex justify-center mb-4">
                 <Book className="w-10 h-10 text-pink-500" />
               </div>
-              <h3 className="text-2xl font-bold text-pink-600">200+</h3>
+              <h3 className="text-2xl font-bold text-pink-600">{`200+`}</h3>
               <p className="text-gray-600">Workshops Conducted</p>
             </div>
             <div className="bg-pink-50 rounded-xl p-6 text-center">
               <div className="flex justify-center mb-4">
                 <Star className="w-10 h-10 text-pink-500" />
               </div>
-              <h3 className="text-2xl font-bold text-pink-600">50+</h3>
+              <h3 className="text-2xl font-bold text-pink-600">{`50+`}</h3>
               <p className="text-gray-600">Partner Schools</p>
             </div>
           </div>
@@ -109,7 +109,7 @@ export default function LutealLibertyPage() {
                 independently make informed decisions about one's health.`}
               </p>
               <div className="space-y-4">
-                <h3 className="text-xl font-semibold text-pink-600">Key Focus Areas:</h3>
+                <h3 className="text-xl font-semibold text-pink-600">{`Key Focus Areas:`}</h3>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-start">
                     <span className="mr-2">•</span>
@@ -121,7 +121,7 @@ export default function LutealLibertyPage() {
                   </li>
                   <li className="flex items-start">
                     <span className="mr-2">•</span>
-                    <span>Self-care and Mental Health Support</span>
+                    <span>{`Self-care and Mental Health Support`}</span>
                   </li>
                   <li className="flex items-start">
                     <span className="mr-2">•</span>
