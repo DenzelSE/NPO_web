@@ -398,34 +398,6 @@ export default function EducationPage() {
           </div>
         </section>
       )}
-
-      {/* CTA Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-6">
-          <div className="bg-gradient-to-r from-green-600 to-green-800 rounded-3xl p-12 text-center text-white">
-            <h2 className="text-4xl font-bold mb-6">Join the Moving Garden Initiative</h2>
-            <p className="text-xl mb-8 max-w-2xl mx-auto">
-              Help us grow sustainable communities through education and agriculture. Together, we can make a difference
-              in food security and environmental stewardship.
-            </p>
-            <div className="flex flex-col sm:flex-row justify-center gap-4">
-              <Link
-                href="/donate"
-                className="px-8 py-4 bg-white text-green-600 rounded-full hover:bg-gray-100 transition-colors"
-              >
-                Donate Now
-              </Link>
-              <Link
-                href="/get-involved"
-                className="px-8 py-4 bg-green-700 text-white rounded-full hover:bg-green-800 transition-colors flex items-center justify-center gap-2"
-              >
-                Get Involved
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   )
 }

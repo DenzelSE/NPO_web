@@ -16,15 +16,7 @@ export default function Home() {
         <BackgroundImage/>
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-          {/* <div className="mb-2 flex justify-center">
-              <Image
-                src="/images/carousel/AfricaRefinedLogo.png"
-                alt="Africa Refined Logo"
-                width={600}
-                height={100}
-                className="w-auto h-auto max-h-48"
-              />
-            </div> */}
+            <h1 className="text-7xl font-bold text-red-500">Africa Refined</h1>
             <h1 className="text-5xl md:text-6xl font-bold mb-6 text-white">Empowering Communities Across Africa</h1>
             <p className="text-xl md:text-2xl text-gray-200 mb-12">
               Join us in creating positive change and building brighter futures for our communities.
@@ -74,14 +66,8 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link
-                href="/donate"
-                className="px-8 py-4 bg-white text-red-600 rounded-full hover:bg-gray-100 transition-colors"
-              >
-                Donate Now
-              </Link>
-              <Link
-                href="/get-involved"
-                className="px-8 py-4 bg-red-700 text-white rounded-full hover:bg-red-800 transition-colors"
+                href="/getInvolved"
+                className="px-8 py-4 bg-red-700 w-1/3 text-white rounded-full hover:bg-red-800 transition-colors"
               >
                 Get Involved
               </Link>

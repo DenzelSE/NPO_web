@@ -62,7 +62,7 @@ const Header = () => {
             <Link href="/contact" className="text-white hover:text-red-500 transition-colors">
               Contact
             </Link>
-            <Link href="/donate" className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors">
+            <Link href="/getInvolved" className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors">
               Donate Today
             </Link>
           </div>
@@ -85,7 +85,7 @@ const Header = () => {
                 Contact
               </Link>
               <Link
-                href="/donate"
+                href="/getInvolved"
                 className="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700 transition-colors text-center"
               >
                 Donate Today

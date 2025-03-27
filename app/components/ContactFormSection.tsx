@@ -48,7 +48,7 @@ const Contact = () => {
     }
   }
   return (
-      <section className="relative py-20 z-10 w-full ">
+      <section className="relative bg-gray-50 py-20 z-10 w-full ">
         <div className="container mx-auto px-6">
           <div className="-mx-4 flex flex-wrap lg:justify-between">
             <div className="w-full px-10 lg:w-1/2 xl:w-6/12">

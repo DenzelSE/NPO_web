@@ -223,14 +223,8 @@ export default function AboutPage() {
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link
-                href="/donate"
-                className="px-8 py-4 bg-white text-red-600 rounded-full hover:bg-gray-100 transition-colors"
-              >
-                Donate Now
-              </Link>
-              <Link
                 href="/get-involved"
-                className="px-8 py-4 bg-red-700 text-white rounded-full hover:bg-red-800 transition-colors flex items-center justify-center gap-2"
+                className="px-8 py-4 bg-red-700 text-white w-1/3 rounded-full hover:bg-red-800 transition-colors flex items-center justify-center gap-2"
               >
                 Get Involved
                 <ArrowRight className="w-5 h-5" />
