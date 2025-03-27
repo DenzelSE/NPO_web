@@ -76,8 +76,8 @@ export default function LutealLibertyPage() {
           <div className="py-8"></div>
           <h1 className="text-5xl font-bold text-pink-400 mb-6">Luteal Liberty Project</h1>
           <p className="text-xl text-white/90 max-w-2xl">
-            Empowering young girls through reproductive and menstrual health education while addressing the challenges
-            they face during their transition through puberty.
+            {`Empowering young girls through reproductive and menstrual health education while addressing the challenges
+            they face during their transition through puberty.`}
           </p>
         </div>
       </div>
@@ -90,28 +90,28 @@ export default function LutealLibertyPage() {
               <div className="flex justify-center mb-4">
                 <Heart className="w-10 h-10 text-pink-500" />
               </div>
-              <h3 className="text-2xl font-bold text-pink-600">100+</h3>
+              <h3 className="text-2xl font-bold text-pink-600">{`100+`}</h3>
               <p className="text-gray-600">Schools Reached</p>
             </div>
             <div className="bg-pink-50 rounded-xl p-6 text-center">
               <div className="flex justify-center mb-4">
                 <Users className="w-10 h-10 text-pink-500" />
               </div>
-              <h3 className="text-2xl font-bold text-pink-600">5,000+</h3>
+              <h3 className="text-2xl font-bold text-pink-600">{`5,000+`}</h3>
               <p className="text-gray-600">Girls Supported</p>
             </div>
             <div className="bg-pink-50 rounded-xl p-6 text-center">
               <div className="flex justify-center mb-4">
                 <Book className="w-10 h-10 text-pink-500" />
               </div>
-              <h3 className="text-2xl font-bold text-pink-600">200+</h3>
+              <h3 className="text-2xl font-bold text-pink-600">{`200+`}</h3>
               <p className="text-gray-600">Workshops Conducted</p>
             </div>
             <div className="bg-pink-50 rounded-xl p-6 text-center">
               <div className="flex justify-center mb-4">
                 <Star className="w-10 h-10 text-pink-500" />
               </div>
-              <h3 className="text-2xl font-bold text-pink-600">50+</h3>
+              <h3 className="text-2xl font-bold text-pink-600">{`50+`}</h3>
               <p className="text-gray-600">Partner Schools</p>
             </div>
           </div>
@@ -125,15 +125,15 @@ export default function LutealLibertyPage() {
             <div>
               <h2 className="text-3xl font-bold mb-6 text-pink-600">About Luteal Liberty</h2>
               <p className="text-gray-700 mb-6">
-                The concept behind the Luteal Liberty project title stems from the fourth and final phase of the
+                {`The concept behind the Luteal Liberty project title stems from the fourth and final phase of the
                 menstrual cycle, known as the luteal phase. During this phase, the corpus luteum, formed after
                 ovulation, produces hormones and exits the body, as the body prepares for a potential pregnancy by
-                increasing progesterone levels.
+                increasing progesterone levels.`}
               </p>
               <p className="text-gray-700 mb-6">
-                'Liberty' represents freedom, independence, and empowerment. It signifies the freedom to understand and
+                {`'Liberty' represents freedom, independence, and empowerment. It signifies the freedom to understand and
                 manage one's body, the empowerment that comes from education and self-awareness, and the ability to
-                independently make informed decisions about one's health.
+                independently make informed decisions about one's health.`}
               </p>
               <div className="space-y-4">
                 <h3 className="text-xl font-semibold text-pink-600">Key Focus Areas:</h3>
