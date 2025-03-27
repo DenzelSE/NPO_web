@@ -4,8 +4,8 @@ import React, { useState } from "react";
 
 
 export default function ContactFormSection() {
-    const [isSubmitting, setIsSubmitting] = useState(false)
-    const [formStatus, setFormStatus] = useState<{ success?: boolean; message?: string } | null>(null)
+    const [, setIsSubmitting] = useState(false)
+    const [, setFormStatus] = useState<{ success?: boolean; message?: string } | null>(null)
     const [formData, setFormData] = useState({
       name: "",
       email: "",
@@ -48,6 +48,7 @@ export default function ContactFormSection() {
           Phone:"",
         })
       } catch (error) {
+        console.log(error)
         setFormStatus({
           success: false,
           message: "Failed to send your message. Please try again later.",
