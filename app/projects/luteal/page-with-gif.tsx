@@ -70,7 +70,7 @@ export default function LutealLibertyPage() {
               <div className="flex justify-center mb-4">
                 <Users className="w-10 h-10 text-pink-500" />
               </div>
-              <h3 className="text-2xl font-bold text-pink-600">{`5,000+<`}/h3>
+              <h3 className="text-2xl font-bold text-pink-600">{`5,000+<`}</h3>
               <p className="text-gray-600">Girls Supported</p>
             </div>
             <div className="bg-pink-50 rounded-xl p-6 text-center">
