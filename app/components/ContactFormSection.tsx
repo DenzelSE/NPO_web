@@ -1,5 +1,6 @@
 
 "use client";
+import { Phone } from "lucide-react";
 import React, { ChangeEvent, FormEvent, useState } from "react";
 
 // interface FormData {
@@ -9,44 +10,59 @@ import React, { ChangeEvent, FormEvent, useState } from "react";
 //   Phone: string;
 // }
 
-const Contact = () => {
-  const [formData,setFormData] = useState({
-    name: "", 
-    email: "", 
-    message:"", 
-    phone: ""});
-
-  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({...prevData, [name]: value}));
-  };
-
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-    
-    // try{
-    //   await addDoc(collection(db, "submissions"), formData);
-    //   alert("Contacts submitted successfully!");
-    // } catch (error) {
-    //   console.error("Error adding information")
-    // }
-    try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json',},
-        body: JSON.stringify(formData),
-      });
-      if (response.ok){
-        setFormData({ name: '', email: '', message: '', phone: '' });
-        alert("Email sent Successfully!")
-      } 
-      else {
-        console.error("Error adding information")
-      }
-    } catch{
-      console.error("Error adding information")
+export default function ContactFormSection() {
+    const [isSubmitting, setIsSubmitting] = useState(false)
+    const [formStatus, setFormStatus] = useState<{ success?: boolean; message?: string } | null>(null)
+    const [formData, setFormData] = useState({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+      Phone:"",
+    })
+  
+    const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
+      const { name, value } = e.target
+      setFormData((prev) => ({
+        ...prev,
+        [name]: value,
+      }))
     }
-  }
+  
+    const handleSubmit = async (e: React.FormEvent) => {
+      e.preventDefault()
+      setIsSubmitting(true)
+      setFormStatus(null)
+  
+      try {
+        // In a real application, you would send this data to your backend
+        console.log("Form data to be sent:", formData)
+  
+        // Simulate API call
+        await new Promise((resolve) => setTimeout(resolve, 1500))
+  
+        setFormStatus({
+          success: true,
+          message: "Thank you for your message! We'll get back to you soon.",
+        })
+  
+        // Reset form
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+          Phone:"",
+        })
+      } catch (error) {
+        setFormStatus({
+          success: false,
+          message: "Failed to send your message. Please try again later.",
+        })
+      } finally {
+        setIsSubmitting(false)
+      }
+    }
   return (
       <section className="relative bg-gray-50 py-20 z-10 w-full ">
         <div className="container mx-auto px-6">
@@ -150,35 +166,41 @@ const Contact = () => {
             <div className="w-full px-4 sm:w-1/2">
               <div className="relative rounded-lg bg-white p-8 shadow-lg sm:p-12">
                 <form onSubmit={handleSubmit}>
-                  <ContactInputBox
+                <div className="grid grid-cols-1 md:grid-cols-1 gap-6">
+                 <div>
+                 <input
                     type="text"
                     name="name"
                     value = {formData.name}
-                    onChange ={handleChange} 
+                    onChange ={handleInputChange}
+                    className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-transparent" 
                     placeholder="Your Name"
                     required
                   />
-                  <ContactInputBox
+                 </div>
+                  <input
                     type="text"
                     name="email"
                     value = {formData.email}
-                    onChange={handleChange}
+                    onChange={handleInputChange}
+                    className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-transparent"
                     placeholder="Your Email"
                     required
                   />
-                  <ContactInputBox
+                  <input
                     type="text"
                     name="phone"
-                    valur = {formData.phone}
-                    onChange = {handleChange}
+                    value = {formData.Phone}
+                    onChange = {handleInputChange}
+                    className="w-full p-3 border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-transparent"
                     placeholder="Your Phone"
                   />
-                  <ContactTextArea
-                    row="6"
-                    placeholder="Your Message"
+                  <input
                     name="details"
                     value = {formData.message}
-                    onChange={handleChange}
+                    onChange={handleInputChange}
+                    className="w-full p-10 border border-gray-300 rounded-md focus:ring-2 focus:ring-red-500 focus:border-transparent"
+                    placeholder="Your Message"
                     required
                     defaultValue=""
                   />
@@ -189,6 +211,7 @@ const Contact = () => {
                     >
                       Send Message
                     </button>
+                    </div>
                   </div>
                 </form>
                 <div>
@@ -1007,35 +1030,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
 
-const ContactTextArea = ({ row, placeholder, name, defaultValue }: any) => {
-  return (
-    <>
-      <div className="mb-6">
-        <textarea
-          rows={row}
-          placeholder={placeholder}
-          name={name}
-          className="w-full resize-none rounded px-[14px] py-3 text-base text-body-color outline-none bg-gray-200 "
-          defaultValue={defaultValue}
-        />
-      </div>
-    </>
-  );
-};
-
-const ContactInputBox = ({ type, placeholder, name } : any) => {
-  return (
-    <>
-      <div className="mb-6">
-        <input
-          type={type}
-          placeholder={placeholder}
-          name={name}
-          className="w-full rounded  px-[14px] py-3 text-base text-body-color outline-none bg-gray-200"
-        />
-      </div>
-    </>
-  );
-};
