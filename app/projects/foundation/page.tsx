@@ -8,7 +8,7 @@ import { ArrowRight, ShoppingCart, Heart, Users, Calendar, Award, X, Loader2 } f
 import { useState } from "react"
 import { sendOrderEmail } from "./actions/SendOrderEmail";
 
-// Form interface for order details
+
 interface OrderFormData {
   name: string
   email: string
@@ -146,16 +146,16 @@ export default function CommunityPage() {
               <div>
                 <h2 className="text-3xl font-bold mb-6 text-red-600">About the Initiative</h2>
                 <p className="text-lg text-gray-700 mb-6">
-                  Established in 2024, the Nelson Mandela Jersey initiative focuses on making a positive impact and
+                  {`Established in 2024, the Nelson Mandela Jersey initiative focuses on making a positive impact and
                   continuing Mandela's legacy of service and compassion. This heartwarming project ties into the broader
-                  Mandela Day initiative and aligns with the spirit of Nelson Mandela Day.
+                  Mandela Day initiative and aligns with the spirit of Nelson Mandela Day.`}
                 </p>
                 <p className="text-lg text-gray-700 mb-6">
-                  Under the theme 'Keeping Warm this Mandela Month', this initiative occurs seasonally between June and
+                  {`Under the theme 'Keeping Warm this Mandela Month', this initiative occurs seasonally between June and
                   July each year, which is winter in South Africa. Its timing ensures that the jerseys are distributed
                   when they are most needed to help people stay warm. The Nelson Mandela Jersey Project is one amongst
                   many initiatives in South Africa that continue the long-living legacy and vision of Tata Nelson
-                  Rolihlahla Mandela.
+                  Rolihlahla Mandela.`}
                 </p>
                 <div className="space-y-4 mt-8">
                   <h3 className="text-3xl font-semibold text-red-600">Key Focus Areas:</h3>
@@ -163,38 +163,38 @@ export default function CommunityPage() {
                     <div>
                       <h4 className="text-2xl font-bold text-gray-800">Seasonal Timing</h4>
                       <p className="text-lg text-gray-700">
-                        The event takes place between June and July each year, which is winter in South Africa. This
+                        {`"The event takes place between June and July each year, which is winter in South Africa. This
                         timing ensures that the jerseys are distributed when they are most needed to help people stay
-                        warm.
+                        warm.`}
                       </p>
                     </div>
                     <div>
                       <h4 className="text-2xl font-bold text-gray-800">Community Support</h4>
                       <p className="text-lg text-gray-700">
-                        By providing jerseys to disadvantaged communities, the project addresses immediate needs and
-                        offers practical support to those who may struggle with the cold weather.
+                        {`By providing jerseys to disadvantaged communities, the project addresses immediate needs and
+                        offers practical support to those who may struggle with the cold weather.`}
                       </p>
                     </div>
                     <div>
                       <h4 className="text-2xl font-bold text-gray-800">Celebrating Mandela's Legacy</h4>
                       <p className="text-lg text-gray-700">
-                        The jerseys feature an image of Nelson Mandela, serving as a reminder of his legacy and the
-                        values he stood for. This helps keep his memory alive and inspires others to continue his work.
+                        {`The jerseys feature an image of Nelson Mandela, serving as a reminder of his legacy and the
+                        values he stood for. This helps keep his memory alive and inspires others to continue his work.`}
                       </p>
                     </div>
                     <div>
                       <h4 className="text-2xl font-bold text-gray-800">67 Minutes of Service</h4>
                       <p className="text-lg text-gray-700">
-                        The project ties into the broader Mandela Day initiative, which encourages people to spend 67
-                        minutes doing something positive for their communities.
+                        {`The project ties into the broader Mandela Day initiative, which encourages people to spend 67
+                        minutes doing something positive for their communities.`}
                       </p>
                     </div>
                   </div>
                 </div>
                 <div className="mt-8">
                   <blockquote className="italic text-gray-700 border-l-4 text-lg border-red-600 pl-4 py-2">
-                    "There can be no greater gift than that of giving one's time and energy to help others without
-                    expecting anything in return." - Nelson Mandela
+                    {`"There can be no greater gift than that of giving one's time and energy to help others without
+                    expecting anything in return." - Nelson Mandela`}
                   </blockquote>
                 </div>
               </div>
@@ -228,8 +228,8 @@ export default function CommunityPage() {
             <div className="text-center mb-12">
               <h2 className="text-5xl font-bold mb-6">SHOP MADIBA STYLE</h2>
               <p className="text-xl max-w-3xl mx-auto">
-                By purchasing these products, you are contributing to the work and fundraiser of Africa Refined. Seize
-                the moment and join us in keeping the Madiba legacy alive.
+                {`By purchasing these products, you are contributing to the work and fundraiser of Africa Refined. Seize
+                the moment and join us in keeping the Madiba legacy alive.`}
               </p>
             </div>
 
@@ -333,9 +333,9 @@ export default function CommunityPage() {
               <div>
                 <h3 className="text-2xl font-bold mb-6 text-red-600">Community Warmth</h3>
                 <p className="text-gray-700 mb-6">
-                  Our Mandela Jersey initiative has made a significant impact in providing warmth to communities during
+                  {`Our Mandela Jersey initiative has made a significant impact in providing warmth to communities during
                   the cold winter months in South Africa. By distributing jerseys to those in need, we've helped address
-                  immediate physical needs while also promoting Mandela's legacy of compassion and service.
+                  immediate physical needs while also promoting Mandela's legacy of compassion and service.`}
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start">
@@ -364,9 +364,9 @@ export default function CommunityPage() {
               <div>
                 <h3 className="text-2xl font-bold mb-6 text-red-600">Preserving Mandela's Legacy</h3>
                 <p className="text-gray-700 mb-6">
-                  Each jersey serves as a reminder of Nelson Mandela's legacy and the values he stood for. By featuring
+                  {`Each jersey serves as a reminder of Nelson Mandela's legacy and the values he stood for. By featuring
                   his image and promoting his ideals, we help keep his memory alive and inspire others to continue his
-                  work of equality, dignity, and compassion for all.
+                  work of equality, dignity, and compassion for all.`}
                 </p>
                 <ul className="space-y-2">
                   <li className="flex items-start">
@@ -571,8 +571,8 @@ export default function CommunityPage() {
                 </button>
 
                 <p className="text-sm text-gray-500 text-center mt-4">
-                  Your order information will be sent to our team, and a confirmation will be sent to your email. We'll
-                  contact you shortly to confirm your order and arrange payment.
+                  {`Your order information will be sent to our team, and a confirmation will be sent to your email. We'll
+                  contact you shortly to confirm your order and arrange payment.`}
                 </p>
               </form>
             </div>

@@ -219,7 +219,7 @@ export default function AboutPage() {
           <div className="bg-black rounded-3xl p-12 text-center text-white">
             <h2 className="text-4xl font-bold mb-6">Join Our Mission</h2>
             <p className="text-xl mb-8 max-w-2xl mx-auto">
-              Together, we can create positive change and build brighter futures for communities across Africa.
+              {'Together, we can create positive change and build brighter futures for communities across Africa.'}
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Link
